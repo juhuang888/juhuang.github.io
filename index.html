@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>My GitHub Page</title>
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -15,5 +16,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5HF8M3T6"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+    <p id="key1"></p>
+    <p id="key2"></p>
+
+    <script>
+        // 获取 URL 参数
+        var urlParams = new URLSearchParams(window.location.search);
+        var key1 = urlParams.get('key1');
+        var key2 = urlParams.get('key2');
+
+        // 显示参数值
+        document.getElementById('key1').textContent = "Key1: " + key1;
+        document.getElementById('key2').textContent = "Key2: " + key2;
+    </script>
 </body>
 </html>
