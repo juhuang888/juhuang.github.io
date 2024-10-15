@@ -54,21 +54,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
          });
 
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     // 获取 URL 参数
-//     var urlParams = new URLSearchParams(window.location.search);
-//     var key1 = urlParams.get('key1');
-//     var key2 = urlParams.get('key2');
+document.addEventListener('DOMContentLoaded', function() {
+    // 获取 URL 参数
+    var urlParams = new URLSearchParams(window.location.search);
+    var key1 = urlParams.get('key1');
+    var key2 = urlParams.get('key2');
 
-//     // 显示参数值
-//     document.getElementById('key1').textContent = "Key1: " + key1;
-//     document.getElementById('key2').textContent = "Key2: " + key2;
+    // 显示参数值
+    document.getElementById('key1').textContent = "Key1: " + key1;
+    document.getElementById('key2').textContent = "Key2: " + key2;
 
-//     // 创建并加载 JavaScript 标签
-//     var script = document.createElement('script');
-//     script.src = 'https://utt.impactcdn.com/A2788006-de3d-4011-a57c-c4737e79de0365535.js?customerid=' + key1 + '&customeremail=' + key2;
-//     document.head.appendChild(script);
-// });
+    // 创建并加载 JavaScript 标签
+    var script = document.createElement('script');
+    script.src = 'https://utt.impactcdn.com/A2788006-de3d-4011-a57c-c4737e79de0365535.js?customerid=' + key1 + '&customeremail=' + key2;
+    document.head.appendChild(script);
+});
 
     </script>
 </body>
