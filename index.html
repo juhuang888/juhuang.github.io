@@ -20,6 +20,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p id="key2"></p>
 
     <script>
+        //Assessment 1: Setting up Google Tag Manager
         // 获取 URL 参数
         var urlParams = new URLSearchParams(window.location.search);
         var key1 = urlParams.get('key1');
@@ -28,6 +29,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         // 显示参数值
         document.getElementById('key1').textContent = "Key1: " + key1;
         document.getElementById('key2').textContent = "Key2: " + key2;
+
+        //Assessment 2: Javascript tag implementation
+        (function(a, b, c, d, e, f, g) {
+    e['ire_o'] = c;
+    e[c] = e[c] || function() {
+        (e[c].a = e[c].a || []).push(arguments);
+    };
+    f = d.createElement(b);
+    g = d.getElementsByTagName(b);
+    f.async = 1;
+    f.src = a;
+    g.parentNode.insertBefore(f, g);
+})(
+    'https://utt.impactcdn.com/A2788006-de3d-4011-a57c-c4737e79de0365535.js',
+    'script',
+    'ire',
+    document,
+    window
+);
+
+// 获取 URL 参数
+var urlParams = new URLSearchParams(window.location.search);
+var key1 = urlParams.get('key1');
+var key2 = urlParams.get('key2');
+
+// 传递参数给 ire 函数
+ire('identify', {
+    customerid: key1,
+    customeremail: key2
+});
     </script>
 </body>
 </html>
